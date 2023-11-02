@@ -7,11 +7,16 @@ large_pricetopping3tax = (float(6.00 + 2.50 + 1.11))
 large_pricetopping4tax = (float(6.00 + 3.35 + 1.22))
 toppings = ['1','2','3','4',]
 pizza_yn = input("would you perhaps like to order a pizza")
-for pizza in pizza_yn:
-    if pizza == "yes or Yes or YES:":
-    print("next we'll get your toppings")
-     print(toppings) 
-topping1 = str(input(how many toppings would you like))
-else:
+while True 
+if pizza_yn == 'yes':
+else: 
+        print("done")
+        break
+        print("next we'll get your toppings")
+    topping1 = str(input("how many toppings would you like"))
+    print(toppings) 
+ else:
     print("order is now canceled")
-    break
+        break
+
+# elif size is large or xl and number of tooppings is == 1
