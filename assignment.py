@@ -11,7 +11,7 @@ pizza_yn = input("would you perhaps like to order a pizza")
 while True: 
     if pizza_yn.lower() == 'yes':   
         print("we will now take your order")
-    else:
+    if pizza_yn.lower() == 'no':
        print("order finished")
        break 
     var = input("what size pizza do you want, large or XL")
@@ -24,4 +24,12 @@ while True:
         if "large" and 3: 
             print(large_price + topping3 * Tax)
         if "large" and 4: 
-            print(large_price + topping4 * Tax)    
+            print(large_price + topping4 * Tax)   
+            if "XL" and 1:
+                print(extralarge_price + topping1 * Tax)
+                if "XL" and 2:
+                    print(extralarge_price + topping2 * Tax)
+                    if "XL" and 3:
+                        print(extralarge_price + topping3 * Tax)
+                        if "XL" and 4:
+                            print(extralarge_price + topping4 * Tax)
