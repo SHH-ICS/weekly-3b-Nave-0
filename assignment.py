@@ -1,25 +1,27 @@
 import math
 large_price = (6.00)
 extralarge_price = (10.00)
-large_pricetopping1tax = (6.00 + 1.00 + 0.91)
-large_pricetopping2tax = (6.00 + 1.75 +1.01)
-large_pricetopping3tax = (6.00 + 2.50 + 1.11)
-large_pricetopping4tax = (6.00 + 3.35 + 1.22)
 toppings = ['1','2','3','4',]
+topping1 = (1.00)
+topping2 = (1.75)
+topping3 = (2.50)
+topping4 = (3.35)
+Tax = (1.13)
 pizza_yn = input("would you perhaps like to order a pizza")
 while True: 
-    if pizza_yn == 'yes,YES,YEs,yeS or yEs':   
+    if pizza_yn.lower() == 'yes':   
         print("we will now take your order")
-        else: 
-         print("done")
-        break
+    else:
+       print("order finished")
+       break 
+    var = input("what size pizza do you want, large or XL")
     print("how many toppings would you like")
-    print("1,2,3 or 4")
-    if 1:
-     print(large_pricetopping1tax)
-    
-    
-
-# elif size is large or xl and number of tooppings is = 1:
-# naveo naveo where did you go
-# # naveo naveo where roam 
+    var = input(str("1,2,3 or 4"))
+    if "large" and 1:
+     print(large_price + topping1 * Tax)
+     if "large" and 2: 
+        print(large_price + topping2 * Tax)
+        if "large" and 3: 
+            print(large_price + topping3 * Tax)
+        if "large" and 4: 
+            print(large_price + topping4 * Tax)    
