@@ -34,9 +34,11 @@ while True:
                     print("Tax Amount: " + str(tax_amount))
                     total_cost = subtotal + tax_amount
                     print("Total Cost: " + str(total_cost))
-                    break
+                xf = input("another?")
+                if xf.lower() == 'yes':
+                    continue 
                 else:
-                    print("amount of toppings entered is not valid")
+                    print("no")
                     break
 
 
